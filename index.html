@@ -7,7 +7,10 @@
   <link rel="stylesheet" href="css/styles.css">
 </head> 
 <body> 
-  <header>Alquimia's restaurant</header> 
+  <header class="main-header">
+    <h1>Alquimia's restaurant</h1>
+  </header> 
+  
   <nav>
     <ul>
       <li><a href="#inicio">Inicio</a></li>
@@ -17,7 +20,9 @@
       <li><a href="#contacto">Reservas</a></li>
     </ul>
   </nav> 
+
   <main> 
+    <!-- SECCIÓN INICIO -->
     <section id="inicio" class="hero">
       <div class="hero-content">
         <h2>Roma Amor & Trattoria | Experiencia Gastronómica Histórica</h2>
@@ -26,282 +31,374 @@
       </div>
     </section>
 
+    <!-- SECCIÓN MENÚ ORGANIZADA POR CATEGORÍAS Y PLATOS INDIVIDUALES -->
     <section id="menu" class="section-container">
       <h2>Nuestra Selección Destacada</h2>
       <p class="section-subtitle">Platos diseñados para despertar tus sentidos.</p>
       
-      <div class="cards">
+      <!-- 1. ANTIPASTO -->
+      <div class="menu-categoria">
+        <h3>1. Entradas - Antipasto</h3>
+        <p class="categoria-desc">El preámbulo perfecto para despertar los sentidos. Fiel a la tradición de los banquetes imperiales, esta selección de aperitivos está pensada para compartirse entre miradas y copas de vino, abriendo el apetito antes del banquete principal con la frescura y elegancia de los campos italianos.</p>
+        
+        <div class="cards">
+          <article class="card">
+            <header class="card-header">
+              <h3>Entrada 1: Bruschetta colosseo</h3>
+            </header>
+            <div class="card-body">
+              <p>Pan rústico al horno de piedra con tomates macerados en albahaca fresca, aceite de oliva virgen extra y queso pecorino romano.</p>
+              <span class="price">$28.000</span>
+            </div>
+            <footer class="card-footer">
+              <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
+            </footer>
+          </article>
 
-        <!-- 1. ANTIPASTO -->
-        <article class="card">
-          <header class="card-header">
-            <h3>Entradas - Antipasto</h3>
-          </header>
-          <div class="card-body">
-            <p>El preámbulo perfecto para despertar los sentidos. Fiel a la tradición de los banquetes imperiales, esta selección de aperitivos está pensada para compartirse entre miradas y copas de vino, abriendo el apetito antes del banquete principal con la frescura y elegancia de los campos italianos.</p>
-            
-            <h3>Entrada 1: Bruschetta colosseo</h3>
-            <p>Pan rústico al horno de piedra con tomates macerados en albahaca fresca, aceite de oliva virgen extra y queso pecorino romano.</p>
-            <span class="price">$28.000</span>
-          </div>
-          <footer class="card-footer">
-            <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
-          </footer>
+          <article class="card">
+            <header class="card-header">
+              <h3>Entrada 2: Caprese</h3>
+            </header>
+            <div class="card-body">
+              <p>Tomates cherry, mozzarella de búfala y albahaca fresca, servidos sobre pan rústico.</p>
+              <span class="price">$25.000</span>
+            </div>
+            <footer class="card-footer">
+              <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
+            </footer>
+          </article>
 
-          <div class="card-body">
-            <h3>Entrada 2: Caprese</h3>
-            <p>Tomates cherry, mozzarella de búfala y albahaca fresca, servidos sobre pan rústico.</p>
-            <span class="price">$25.000</span>
-          </div>
-          <footer class="card-footer">
-            <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
-          </footer>
+          <article class="card">
+            <header class="card-header">
+              <h3>Entrada 3: Camarones Toscana</h3>
+            </header>
+            <div class="card-body">
+              <p>Camarones a la parrilla con salsa de tomate, albahaca fresca, aceite de oliva virgen extra y queso pecorino romano.</p>
+              <span class="price">$38.600</span>
+            </div>
+            <footer class="card-footer">
+              <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
+            </footer>
+          </article>
+        </div>
+      </div>
 
-          <div class="card-body">
-            <h3>Entrada 3: Camarones Toscana</h3>
-            <p>Camarones a la parrilla con salsa de tomate, albahaca fresca, aceite de oliva virgen extra y queso pecorino romano.</p>
-            <span class="price">$38.600</span>
-          </div>
-          <footer class="card-footer">
-            <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
-          </footer>
-        </article>
+      <!-- 2. PRIMO PIATTO -->
+      <div class="menu-categoria">
+        <h3>2. El primer plato - Primo Piatto</h3>
+        <p class="categoria-desc">El corazón vibrante de la mesa italiana. Aquí es donde la pasta artesanal, el cremoso risotto o los caldos aromatizados se convierten en poesía pura. Elaborado desde cero con la devoción de las antiguas recetas romanas, cada bocado es un abrazo cálido que rinde culto a la abundancia, a la tierra y al verdadero arte del encuentro.</p>
+        
+        <div class="cards">
+          <article class="card">
+            <header class="card-header">
+              <h3>Plato 1: Risotto de Setas</h3>
+            </header>
+            <div class="card-body">
+              <p>Risotto cremoso con setas de temporada, parmesano y un toque de vino tinto.</p>
+              <span class="price">$32.000</span>
+            </div>
+            <footer class="card-footer">
+              <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
+            </footer>
+          </article>
 
-        <!-- 2. PRIMO PIATTO -->
-        <article class="card">
-          <header class="card-header">
-            <h3>El primer plato - Primo Piatto</h3>
-          </header>
-          <div class="card-body">
-            <p>El corazón vibrante de la mesa italiana. Aquí es donde la pasta artesanal, el cremoso risotto o los caldos aromatizados se convierten en poesía pura. Elaborado desde cero con la devoción de las antiguas recetas romanas, cada bocado es un abrazo cálido que rinde culto a la abundancia, a la tierra y al verdadero arte del encuentro.</p>
-          
-            <h3>Plato 1: Risotto de Setas</h3>
-            <p>Risotto cremoso con setas de temporada, parmesano y un toque de vino tinto.</p>
-            <span class="price">$32.000</span>
-          </div>
-          <footer class="card-footer">
-            <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
-          </footer>
+          <article class="card">
+            <header class="card-header">
+              <h3>Plato 2: Fettuccine ai Funghi e Tartufo</h3>
+            </header>
+            <div class="card-body">
+              <p>Pasta fresca de huevo, champiñones portobello, crema de trufa negra, queso parmesano madurado, mantequilla sin sal y pimienta negra recién molida.</p>
+              <span class="price">$35.000</span>
+            </div>
+            <footer class="card-footer">
+              <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
+            </footer>
+          </article>
 
-          <div class="card-body">
-            <h3>Plato 2: Fettuccine ai Funghi e Tartufo</h3>
-            <p>Pasta fresca de huevo, champiñones portobello, crema de trufa negra, queso parmesano madurado, mantequilla sin sal y pimienta negra recién molida.</p>
-            <span class="price">$35.000</span>
-          </div>
-          <footer class="card-footer">
-            <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
-          </footer>
+          <article class="card">
+            <header class="card-header">
+              <h3>Plato 3: Risotto alla Milanese</h3>
+            </header>
+            <div class="card-body">
+              <p>Arroz arborio, azafrán en hebras, caldo de carne, vino blanco seco, queso parmesano madurado, mantequilla y cebolla salteada.</p>
+              <span class="price">$34.000</span>
+            </div>
+            <footer class="card-footer">
+              <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
+            </footer>
+          </article>
 
-          <div class="card-body">
-            <h3>Plato 3: Risotto alla Milanese</h3>
-            <p>Arroz arborio, azafrán en hebras, caldo de carne, vino blanco seco, queso parmesano madurado, mantequilla y cebolla salteada.</p>
-            <span class="price">$34.000</span>
-          </div>
-          <footer class="card-footer">
-            <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
-          </footer>
+          <article class="card">
+            <header class="card-header">
+              <h3>Plato 4: Gnocchi alla Sorrentina</h3>
+            </header>
+            <div class="card-body">
+              <p>Ñoquis de papa artesanales, salsa de tomate San Marzano, queso mozzarella fresco fundido, albahaca fresca y pecorino romano gratinado al horno de piedra.</p>
+              <span class="price">$42.000</span>
+            </div>
+            <footer class="card-footer">
+              <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
+            </footer>
+          </article>
+        </div>
+      </div>
 
-          <div class="card-body">
-            <h3>Plato 4: Gnocchi alla Sorrentina</h3>
-            <p>Ñoquis de papa artesanales, salsa de tomate San Marzano, queso mozzarella fresco fundido, albahaca fresca y pecorino romano gratinado al horno de piedra.</p>
-            <span class="price">$42.000</span>
-          </div>
-          <footer class="card-footer">
-            <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
-          </footer>
-        </article>
+      <!-- 3. SECONDO PIATTO -->
+      <div class="menu-categoria">
+        <h3>3. Segundo plato - Secondo Piatto</h3>
+        <p class="categoria-desc">Platos fuertes elaborados a la perfección con cortes de carne de alta calidad y aves sazonadas con hierbas mediterráneas tradicionales.</p>
+        
+        <div class="cards">
+          <article class="card">
+            <header class="card-header">
+              <h3>Plato 1: Saltimbocca alla Romana</h3>
+            </header>
+            <div class="card-body">
+              <p>Escalopes de ternera, jamón de Parma, salvia fresca, vino blanco seco, mantequilla y puré de papa rústico.</p>
+              <span class="price">$62.000</span>
+            </div>
+            <footer class="card-footer">
+              <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
+            </footer>
+          </article>
 
-        <!-- 3. SECONDO PIATTO -->
-        <article class="card">
-          <header class="card-header">
-            <h3>Segundo plato - Secondo Piatto</h3>
-          </header>
-          <div class="card-body">
-            <p>Platos fuertes elaborados a la perfección con cortes de carne de alta calidad y aves sazonadas con hierbas mediterráneas tradicionales.</p>
-          
-            <h3>Plato 1: Saltimbocca alla Romana</h3>
-            <p>Escalopes de ternera, jamón de Parma, salvia fresca, vino blanco seco, mantequilla y puré de papa rústico.</p>
-            <span class="price">$62.000</span>
-          </div>
-          <footer class="card-footer">
-            <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
-          </footer>
+          <article class="card">
+            <header class="card-header">
+              <h3>Plato 2: Ossobuco alla Milanese</h3>
+            </header>
+            <div class="card-body">
+              <p>Jarrete de ternera estofado, vino tinto, caldo de vegetales, zanahoria, apio, cebolla y gremolata de limón y perejil.</p>
+              <span class="price">$72.000</span>
+            </div>
+            <footer class="card-footer">
+              <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
+            </footer>
+          </article>
 
-          <div class="card-body">
-            <h3>Plato 2: Ossobuco alla Milanese</h3>
-            <p>Jarrete de ternera estofado, vino tinto, caldo de vegetales, zanahoria, apio, cebolla y gremolata de limón y perejil.</p>
-            <span class="price">$72.000</span>
-          </div>
-          <footer class="card-footer">
-            <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
-          </footer>
+          <article class="card">
+            <header class="card-header">
+              <h3>Plato 3: Tagliata di Manzo al Balsamico</h3>
+            </header>
+            <div class="card-body">
+              <p>Solomillo de res a las brasas, rúcula fresca, lascas de queso Parmigiano Reggiano y reducción de vinagre balsámico de Módena.</p>
+              <span class="price">$84.000</span>
+            </div>
+            <footer class="card-footer">
+              <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
+            </footer>
+          </article>
 
-          <div class="card-body">
-            <h3>Plato 3: Tagliata di Manzo al Balsamico</h3>
-            <p>Solomillo de res a las brasas, rúcula fresca, lascas de queso Parmigiano Reggiano y reducción de vinagre balsámico de Módena.</p>
-            <span class="price">$84.000</span>
-          </div>
-          <footer class="card-footer">
-            <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
-          </footer>
+          <article class="card">
+            <header class="card-header">
+              <h3>Plato 4: Pollo alla Cacciatora</h3>
+            </header>
+            <div class="card-body">
+              <p>Contramuslo de pollo deshuesado, tomates San Marzano, pimientos rojos, aceitunas negras, romero, ajo y vino tinto.</p>
+              <span class="price">$62.000</span>
+            </div>
+            <footer class="card-footer">
+              <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
+            </footer>
+          </article>
+        </div>
+      </div>
 
-          <div class="card-body">
-            <h3>Plato 4: Pollo alla Cacciatora</h3>
-            <p>Contramuslo de pollo deshuesado, tomates San Marzano, pimientos rojos, aceitunas negras, romero, ajo y vino tinto.</p>
-            <span class="price">$62.000</span>
-          </div>
-          <footer class="card-footer">
-            <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
-          </footer>
-        </article>
+      <!-- 4. CONTORNO -->
+      <div class="menu-categoria">
+        <h3>4. Contorno - Acompañamientos</h3>
+        <p class="categoria-desc">El complemento ideal para realzar los sabores de la mesa italiana. Seleccionados para armonizar perfectamente con cada plato principal, aportando textura, equilibrio y tradición.</p>
+        
+        <div class="cards">
+          <article class="card">
+            <header class="card-header">
+              <h3>Contorno 1: Patate al Forno con Rosmarino</h3>
+            </header>
+            <div class="card-body">
+              <p>Papas rústicas horneadas a las finas hierbas, aceite de oliva virgen extra, romero fresco y dientes de ajo dorados.</p>
+              <span class="price">$14.000</span>
+            </div>
+            <footer class="card-footer">
+              <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
+            </footer>
+          </article>
 
-        <!-- 4. CONTORNO (4 ítems) -->
-        <article class="card">
-          <header class="card-header">
-            <h3>Contorno - Acompañamientos</h3>
-          </header>
-          <div class="card-body">
-            <p>El complemento ideal para realzar los sabores de la mesa italiana. Seleccionados para armonizar perfectamente con cada plato principal, aportando textura, equilibrio y tradición.</p>
-            
-            <h3>Contorno 1: Patate al Forno con Rosmarino</h3>
-            <p>Papas rústicas horneadas a las finas hierbas, aceite de oliva virgen extra, romero fresco y dientes de ajo dorados.</p>
-            <span class="price">$14.000</span>
-          </div>
-          <footer class="card-footer">
-            <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
-          </footer>
+          <article class="card">
+            <header class="card-header">
+              <h3>Contorno 2: Caponata Siciliana</h3>
+            </header>
+            <div class="card-body">
+              <p>Guisado tradicional de berenjenas, apio, alcaparras, aceitunas y tomate agridulce.</p>
+              <span class="price">$16.000</span>
+            </div>
+            <footer class="card-footer">
+              <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
+            </footer>
+          </article>
 
-          <div class="card-body">
-            <h3>Contorno 2: Caponata Siciliana</h3>
-            <p>Guisado tradicional de berenjenas, apio, alcaparras, aceitunas y tomate agridulce.</p>
-            <span class="price">$16.000</span>
-          </div>
-          <footer class="card-footer">
-            <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
-          </footer>
+          <article class="card">
+            <header class="card-header">
+              <h3>Contorno 3: Insalata Mista della Casa</h3>
+            </header>
+            <div class="card-body">
+              <p>Mezcla de hojas verdes frescas, tomates cherry, lascas de parmesano y vinagreta balsámica de la casa.</p>
+              <span class="price">$15.000</span>
+            </div>
+            <footer class="card-footer">
+              <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
+            </footer>
+          </article>
 
-          <div class="card-body">
-            <h3>Contorno 3: Insalata Mista della Casa</h3>
-            <p>Mezcla de hojas verdes frescas, tomates cherry, lascas de parmesano y vinagreta balsámica de la casa.</p>
-            <span class="price">$15.000</span>
-          </div>
-          <footer class="card-footer">
-            <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
-          </footer>
+          <article class="card">
+            <header class="card-header">
+              <h3>Contorno 4: Verdure Grigliate al Limone</h3>
+            </header>
+            <div class="card-body">
+              <p>Vegetales de estación a la parrilla (calabacín, berenjena y pimientos) marinados en aceite de oliva y limón.</p>
+              <span class="price">$17.000</span>
+            </div>
+            <footer class="card-footer">
+              <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
+            </footer>
+          </article>
+        </div>
+      </div>
 
-          <div class="card-body">
-            <h3>Contorno 4: Verdure Grigliate al Limone</h3>
-            <p>Vegetales de estación a la parrilla (calabacín, berenjena y pimientos) marinados en aceite de oliva y limón.</p>
-            <span class="price">$17.000</span>
-          </div>
-          <footer class="card-footer">
-            <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
-          </footer>
-        </article>
+      <!-- 5. DOLCE -->
+      <div class="menu-categoria">
+        <h3>5. El postre - Dolce</h3>
+        <p class="categoria-desc">El dulce epílogo de una historia inolvidable. En la tradición de la alta mesa romana, el postre es el gesto final del amor y la hospitalidad.</p>
+        
+        <div class="cards">
+          <article class="card">
+            <header class="card-header">
+              <h3>Postre 1: Tiramisù Tradizionale</h3>
+            </header>
+            <div class="card-body">
+              <p>Bizcochos savoiardi, café espresso, queso mascarpone, cacao en polvo y licor Amaretto.</p>
+              <span class="price">$18.000</span>
+            </div>
+            <footer class="card-footer">
+              <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
+            </footer>
+          </article>
 
-        <!-- 5. DOLCE (3 ítems) -->
-        <article class="card">
-          <header class="card-header">
-            <h3>El postre - Dolce</h3>
-          </header>
-          <div class="card-body">
-            <p>El dulce epílogo de una historia inolvidable. En la tradición de la alta mesa romana, el postre es el gesto final del amor y la hospitalidad.</p>
+          <article class="card">
+            <header class="card-header">
+              <h3>Postre 2: Crostata di Ricotta e Ciliegie</h3>
+            </header>
+            <div class="card-body">
+              <p>Pasta frola de mantequilla, relleno de queso ricotta, ralladura de limón y mermelada de cerezas negras.</p>
+              <span class="price">$22.000</span>
+            </div>
+            <footer class="card-footer">
+              <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
+            </footer>
+          </article>
 
-            <h3>Postre 1: Tiramisù Tradizionale</h3>
-            <p>Bizcochos savoiardi, café espresso, queso mascarpone, cacao en polvo y licor Amaretto.</p>
-            <span class="price">$18.000</span>
-          </div>
-          <footer class="card-footer">
-            <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
-          </footer>
+          <article class="card">
+            <header class="card-header">
+              <h3>Postre 3: Tortino al Cioccolato dal Cuore Caldo</h3>
+            </header>
+            <div class="card-body">
+              <p>Volcán de chocolate negro con centro líquido caliente, acompañado de helado de crema y azúcar impalpable.</p>
+              <span class="price">$25.000</span>
+            </div>
+            <footer class="card-footer">
+              <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
+            </footer>
+          </article>
+        </div>
+      </div>
 
-          <div class="card-body">
-            <h3>Postre 2: Crostata di Ricotta e Ciliegie</h3>
-            <p>Pasta frola de mantequilla, relleno de queso ricotta, ralladura de limón y mermelada de cerezas negras.</p>
-            <span class="price">$22.000</span>
-          </div>
-          <footer class="card-footer">
-            <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
-          </footer>
+      <!-- 6. BEVANDE -->
+      <div class="menu-categoria">
+        <h3>6. Bebidas - Bevande</h3>
+        <p class="categoria-desc">El maridaje perfecto para elevar la experiencia culinaria. Desde refinados vinos hasta refrescantes elixires artesanales y café de grano seleccionado.</p>
+        
+        <div class="cards">
+          <article class="card">
+            <header class="card-header">
+              <h3>Bebida 1: Vino Chianti Classico DOCG</h3>
+            </header>
+            <div class="card-body">
+              <p>Vino tinto tradicional de la Toscana con notas de frutos rojos y especias (Copa / Botella).</p>
+              <span class="price">$22.000</span>
+            </div>
+            <footer class="card-footer">
+              <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
+            </footer>
+          </article>
 
-          <div class="card-body">
-            <h3>Postre 3: Tortino al Cioccolato dal Cuore Caldo</h3>
-            <p>Volcán de chocolate negro con centro líquido caliente, acompañado de helado de crema y azúcar impalpable.</p>
-            <span class="price">$25.000</span>
-          </div>
-          <footer class="card-footer">
-            <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
-          </footer>
-        </article>
+          <article class="card">
+            <header class="card-header">
+              <h3>Bebida 2: Limonata al Basilico Fresco</h3>
+            </header>
+            <div class="card-body">
+              <p>Limonada artesanal macerada con hojas frescas de albahaca y un toque de almíbar orgánico.</p>
+              <span class="price">$12.000</span>
+            </div>
+            <footer class="card-footer">
+              <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
+            </footer>
+          </article>
 
-        <!-- 6. BEVANDE (6 ítems) -->
-        <article class="card">
-          <header class="card-header">
-            <h3>Bebidas - Bevande</h3>
-          </header>
-          <div class="card-body">
-            <p>El maridaje perfecto para elevar la experiencia culinaria. Desde refinados vinos hasta refrescantes elixires artesanales y café de grano seleccionado.</p>
-            
-            <h3>Bebida 1: Vino Chianti Classico DOCG</h3>
-            <p>Vino tinto tradicional de la Toscana con notas de frutos rojos y especias (Copa / Botella).</p>
-            <span class="price">$22.000</span>
-          </div>
-          <footer class="card-footer">
-            <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
-          </footer>
+          <article class="card">
+            <header class="card-header">
+              <h3>Bebida 3: Acqua Panna / San Pellegrino</h3>
+            </header>
+            <div class="card-body">
+              <p>Agua mineral italiana sin gas o con gas para acompañar la comida.</p>
+              <span class="price">$10.000</span>
+            </div>
+            <footer class="card-footer">
+              <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
+            </footer>
+          </article>
 
-          <div class="card-body">
-            <h3>Bebida 2: Limonata al Basilico Fresco</h3>
-            <p>Limonada artesanal macerada con hojas frescas de albahaca y un toque de almíbar orgánico.</p>
-            <span class="price">$12.000</span>
-          </div>
-          <footer class="card-footer">
-            <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
-          </footer>
+          <article class="card">
+            <header class="card-header">
+              <h3>Bebida 4: Aperol Spritz</h3>
+            </header>
+            <div class="card-body">
+              <p>Cóctel refrescante con Aperol, Prosecco, agua con gas y una rodaja de naranja fresca.</p>
+              <span class="price">$26.000</span>
+            </div>
+            <footer class="card-footer">
+              <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
+            </footer>
+          </article>
 
-          <div class="card-body">
-            <h3>Bebida 3: Acqua Panna / San Pellegrino</h3>
-            <p>Agua mineral italiana sin gas o con gas para acompañar la comida.</p>
-            <span class="price">$10.000</span>
-          </div>
-          <footer class="card-footer">
-            <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
-          </footer>
+          <article class="card">
+            <header class="card-header">
+              <h3>Bebida 5: Caffe Espresso Romano</h3>
+            </header>
+            <div class="card-body">
+              <p>Café de grano italiano 100% arábiga tostado, servido con una fina cáscara de limón.</p>
+              <span class="price">$16.000</span>
+            </div>
+            <footer class="card-footer">
+              <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
+            </footer>
+          </article>
 
-          <div class="card-body">
-            <h3>Bebida 4: Aperol Spritz</h3>
-            <p>Cóctel refrescante con Aperol, Prosecco, agua con gas y una rodaja de naranja fresca.</p>
-            <span class="price">$26.000</span>
-          </div>
-          <footer class="card-footer">
-            <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
-          </footer>
-
-          <div class="card-body">
-            <h3>Bebida 5: Caffe Espresso Romano</h3>
-            <p>Café de grano italiano 100% arábiga tostado, servido con una fina cáscara de limón.</p>
-            <span class="price">$16.000</span>
-          </div>
-          <footer class="card-footer">
-            <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
-          </footer>
-
-          <div class="card-body">
-            <h3>Bebida 6: Digestivo Limoncello</h3>
-            <p>Licor dulce de limón helado, perfecto para cerrar la comida al estilo tradicional italiano.</p>
-            <span class="price">$15.000</span>
-          </div>
-          <footer class="card-footer">
-            <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
-          </footer>
-        </article>
-
+          <article class="card">
+            <header class="card-header">
+              <h3>Bebida 6: Digestivo Limoncello</h3>
+            </header>
+            <div class="card-body">
+              <p>Licor dulce de limón helado, perfecto para cerrar la comida al estilo tradicional italiano.</p>
+              <span class="price">$15.000</span>
+            </div>
+            <footer class="card-footer">
+              <a href="#contacto" class="btn btn-secondary">Pedir / Reservar</a>
+            </footer>
+          </article>
+        </div>
       </div>
     </section>
-    
 
-
-   <section id="nosotros" class="section-container">
+    <!-- SECCIÓN NOSOTROS -->
+    <section id="nosotros" class="section-container">
       <h2>Nosotros</h2>
       <p class="section-subtitle">Conoce nuestra pasión y tradición culinaria</p>
       
@@ -312,7 +409,7 @@
       </div>
     </section>
 
-
+    <!-- SECCIÓN SEDES -->
     <section id="sedes" class="section-container">
       <h2>Nuestras Sedes</h2>
       <p class="section-subtitle">Encuentra el restaurante más cercano</p>
@@ -342,35 +439,33 @@
       </div>
     </section>
 
-
-
-
+    <!-- SECCIÓN CONTACTO Y RESERVAS -->
     <section id="contacto" class="section-container">
       <h2>Reserva tu Mesa</h2>
       <p class="section-subtitle">Dinos cuándo nos visitas y preparamos todo para ti</p>
       
-      <form class="contacto-form" action="#" method="POST">
-        <div class="form-group">
+      <form class="form-reserva" action="#" method="POST">
+        <div class="campo">
           <label for="nombre">Nombre completo:</label>
           <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
         </div>
 
-        <div class="form-group">
+        <div class="campo">
           <label for="correo">Correo electrónico:</label>
           <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
         </div>
 
-        <div class="form-group">
+        <div class="campo">
           <label for="telefono">Teléfono de contacto:</label>
           <input type="tel" id="telefono" name="telefono" placeholder="300 000 0000" required>
         </div>
 
-        <div class="form-group">
+        <div class="campo">
           <label for="fecha">Fecha y Hora:</label>
           <input type="datetime-local" id="fecha" name="fecha" required>
         </div>
 
-        <div class="form-group">
+        <div class="campo">
           <label for="personas">Número de personas:</label>
           <select id="personas" name="personas" required>
             <option value="1">1 persona</option>
@@ -381,17 +476,18 @@
           </select>
         </div>
 
-        <div class="form-group">
+        <div class="campo">
           <label for="mensaje">Comentarios o solicitudes especiales:</label>
           <textarea id="mensaje" name="mensaje" rows="4" placeholder="Alguna alergia, celebración especial, etc."></textarea>
         </div>
 
-        <button type="submit" class="btn btn-primary">Confirmar Reserva</button>
+        <button type="submit" class="btn btn-submit">Confirmar Reserva</button>
       </form>
     </section>
-
-    
   </main> 
-  <footer>...</footer> 
+
+  <footer>
+    <p>&copy; 2026 Alquimia's Restaurant / Roma Amor. Todos los derechos reservados.</p>
+  </footer> 
 </body> 
 </html>

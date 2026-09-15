@@ -1,0 +1,201 @@
+/* css/styles.css */
+
+/* 1. VARIABLES GLOBALES: Guardamos colores y medidas para reutilizarlos en todo el sitio */
+:root { 
+  --color-primary: #8b0000;   /* Rojo vino oscuro (color principal) */
+  --color-accent: #d4af37;    /* Dorado (para resaltar detalles y botones) */
+  --color-bg: #f4ebd9;        /* Fondo crema/beige suave para la página */
+  --color-card-bg: #ffffff;   /* Fondo blanco puro para las tarjetas */
+  --color-text: #1a1a1a;      /* Color casi negro para que el texto sea fácil de leer */
+  --space: 1rem;              /* Espaciado estándar (16px aproximadamente) */
+  --border-radius: 8px;       /* Curvatura de bordes redondeados */
+  --transition: all 0.3s ease; /* Transición suave de 0.3 segundos para efectos */
+}
+
+/* 2. REINICIO DE ESTILOS (RESET): Quita márgenes por defecto del navegador */
+* {
+  box-sizing: border-box; /* Incluye bordes y rellenos en el tamaño total de cada elemento */
+  margin: 0;              /* Elimina el margen externo por defecto */
+  padding: 0;             /* Elimina el espacio interno por defecto */
+}
+
+/* 3. ESTILOS GENERALES DEL CUERPO DE LA PÁGINA */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipografía principal */
+  background-color: var(--color-bg); /* Aplica el fondo crema */
+  color: var(--color-text);         /* Aplica el color de texto oscuro */
+  line-height: 1.6;                 /* Interlineado cómodo para leer */
+}
+
+/* 4. ENCABEZADO Y MENÚ DE NAVEGACIÓN */
+.main-header {
+  background-color: var(--color-primary); /* Fondo rojo vino */
+  color: white;                            /* Texto blanco */
+  text-align: center;                      /* Centra el título del restaurante */
+  padding: 1.5rem;                         /* Espacio interno alrededor del título */
+}
+
+nav {
+  background-color: #2c2c2c; /* Fondo gris oscuro para la barra de navegación */
+  padding: 0.8rem;           /* Relleno interno superior e inferior */
+}
+
+nav ul {
+  display: flex;             /* Pone los enlaces uno al lado del otro en fila */
+  justify-content: center;   /* Centra los enlaces horizontalmente */
+  list-style: none;          /* Quita los puntos/viñetas de la lista */
+  gap: 1.5rem;               /* Espacio de separación entre cada enlace */
+}
+
+nav a {
+  color: white;              /* Enlaces en texto blanco */
+  text-decoration: none;     /* Elimina el subrayado de los hipervínculos */
+  font-weight: bold;         /* Letra en negrita */
+}
+
+nav a:hover {
+  color: var(--color-accent); /* Cambia a dorado al pasar el ratón por encima */
+}
+
+/* 5. ESTRUCTURA DE CONTENEDORES Y SECCIONES */
+.section-container {
+  padding: 2rem var(--space); /* Relleno arriba/abajo de 2rem y a los lados de 1rem */
+  max-width: 1200px;          /* Ancho máximo para que no se extienda demasiado en pantallas grandes */
+  margin: 0 auto;             /* Centra la sección en la pantalla */
+}
+
+.section-container h2 {
+  color: var(--color-primary); /* Títulos h2 en color rojo vino */
+  margin-bottom: 0.5rem;       /* Separación respecto al texto inferior */
+}
+
+/* 6. CATEGORÍAS DEL MENÚ (ENTRADAS, PLATOS, POSTRES, ETC.) */
+.menu-categoria {
+  margin-top: 2rem;    /* Separación superior entre categorías */
+  margin-bottom: 1.5rem; /* Separación inferior */
+}
+
+.menu-categoria h3 {
+  color: var(--color-primary);                 /* Título de categoría en rojo vino */
+  border-bottom: 2px solid var(--color-accent);/* Línea dorada debajo del título */
+  padding-bottom: 0.3rem;                      /* Espacio entre el texto y la línea */
+  margin-bottom: 1rem;                         /* Separación con el contenido */
+  font-size: 1.4rem;                           /* Tamaños de fuente destacados */
+}
+
+/* 7. EJERCICIO 4: FLEXBOX Y RESPONSIVIDAD (TARJETAS DEL MENÚ Y SEDES) */
+.cards {
+  display: flex;       /* Cambia la cuadrícula a un contenedor flexible */
+  gap: 1rem;           /* Define la separación uniforme entre tarjetas */
+  flex-wrap: wrap;     /* Permite que las tarjetas bajen a la siguiente fila sin romper el layout */
+}
+
+.card {
+  flex: 1 1 280px;                        /* Crecen, se reducen y tienen un tamaño base de 280px */
+  background-color: var(--color-card-bg); /* Fondo blanco */
+  border-radius: var(--border-radius);    /* Esquinas redondeadas (8px) */
+  padding: 1.2rem;                        /* Espacio interno dentro de la tarjeta */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);  /* Sombra suave para efecto de elevación */
+  display: flex;                          /* Ordena contenido interno de la tarjeta en columna */
+  flex-direction: column; 
+  justify-content: space-between;         /* Distribuye el espacio para alinear botones abajo */
+}
+
+.card-header h3 {
+  color: var(--color-primary); /* Nombre del plato/sede en rojo vino */
+  margin-bottom: 0.5rem;       /* Espacio debajo del nombre */
+}
+
+.price {
+  display: block;              /* Ocupa su propia línea */
+  font-weight: bold;           /* Texto en negrita */
+  color: var(--color-primary); /* Precio en rojo vino */
+  font-size: 1.2rem;           /* Tamaño del precio */
+  margin-top: 0.5rem;          /* Distancia del texto superior */
+}
+
+/* 8. BOTONES E INTERACTIVIDAD */
+.btn, .btn-submit {
+  display: inline-block;               /* Permite darle dimensiones y relleno */
+  background-color: var(--color-primary);/* Fondo rojo vino por defecto */
+  color: white;                        /* Texto blanco */
+  padding: 0.6rem 1.2rem;              /* Tamaño del botón (alto y ancho) */
+  border-radius: var(--border-radius); /* Bordes redondeados */
+  text-decoration: none;               /* Sin subrayado */
+  font-weight: bold;                   /* Letra negrita */
+  border: none;                        /* Quita bordes por defecto */
+  cursor: pointer;                     /* Muestra el ícono de mano al pasar el cursor */
+  transition: var(--transition);       /* Aplica animación suave de cambio */
+  margin-top: 0.5rem;                  /* Margen superior */
+}
+
+.btn-secondary {
+  background-color: var(--color-accent); /* Fondo dorado para botones secundarios */
+  color: #000;                           /* Texto negro */
+}
+
+.btn:hover, .btn-submit:hover {
+  opacity: 0.9;                 /* Ligera transparencia al pasar el mouse */
+  transform: translateY(-2px);  /* Eleva el botón 2 píxeles para dar efecto de pulsado */
+}
+
+/* 9. FORMULARIO DE RESERVAS */
+.form-reserva {
+  background-color: var(--color-card-bg); /* Fondo blanco */
+  padding: 2rem;                         /* Relleno interno amplio */
+  border-radius: var(--border-radius);    /* Bordes redondeados */
+  max-width: 600px;                       /* Ancho máximo centrado */
+  margin: 0 auto;                        /* Centra el formulario */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);   /* Sombra alrededor del contenedor */
+}
+
+.campo {
+  margin-bottom: 1rem; /* Espacio inferior entre cada entrada/campo */
+}
+
+.campo label {
+  display: block;        /* Pone la etiqueta sobre el input */
+  margin-bottom: 0.3rem; /* Separación con el campo de texto */
+  font-weight: bold;     /* Texto en negrita */
+}
+
+.campo input, .campo select, .campo textarea {
+  width: 100%;             /* El campo ocupa todo el ancho disponible */
+  padding: 0.5rem;          /* Espacio interno para escribir cómodamente */
+  border: 1px solid #ccc;   /* Borde gris claro delgado */
+  border-radius: 4px;       /* Bordes ligeramente redondeados */
+}
+
+/* 10. PIE DE PÁGINA (FOOTER) */
+footer {
+  text-align: center;                      /* Texto centrado */
+  padding: 1.5rem;                         /* Relleno interno */
+  background-color: var(--color-primary); /* Fondo rojo vino */
+  color: white;                            /* Texto blanco */
+  margin-top: 2rem;                        /* Distancia con la sección superior */
+}
+
+/* 11. ESTILO ESPECÍFICO DEL PÁRRAFO DEL HERO (INICIO) */
+.hero-content p {
+  font-family: 'Georgia', serif; /* Tipografía clásica y elegante */
+  font-size: 1.0rem;            /* Tamaño de texto */
+  font-style: italic;           /* Estilo en cursiva */
+  font-weight: 300;             /* Grosor de letra más delgado */
+  color: #1a1a1a;               /* Color de texto oscuro */
+}
+
+/* 12. EJERCICIO 5: DISEÑO RESPONSIVE CON MEDIA QUERIES */
+@media (max-width: 700px) { 
+  nav ul { 
+    flex-direction: column; 
+    gap: 0.8rem;
+  } 
+
+  .hero { 
+    text-align: center; 
+  } 
+
+  .cards { 
+    flex-direction: column; 
+  } 
+}

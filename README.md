@@ -58,7 +58,16 @@ Resolución de dudas y problemas: Funcionó como un soporte técnico en tiempo r
 
 Verificación de buenas prácticas: Validó la correcta estructura semántica en HTML5 (uso de etiquetas como section,article,header,footer) y confirmó el cumplimiento de las reglas de responsividad en CSS (@media queries, Flexbox) para garantizar que la página funcionara en distintos tamaños de pantalla.
 
-Registro de evidencias: evidencias/ia/registro_ia.md
+Registro de evidencias: 
+## Evidencias
+
+![Evidencia 1](evidencias/1.jpg)
+
+![Evidencia 2](evidencias/2.jpg)
+
+![Evidencia 3](evidencias/3.jpg)
+
+![Evidencia 4](evidencias/4.jpg)
  
 ## Evidencias 
 - Preguntas manuscritas: Estas estan adjuntas a una carpeta que incluye 4 fotos de las respuestas en una carpeta llamada Evidencias

@@ -56,7 +56,7 @@ Organización y estructuración del trabajo: Nos ayudó a estructurar la lógica
 
 Resolución de dudas y problemas: Funcionó como un soporte técnico en tiempo real para resolver inquietudes específicas y depurar errores que surgieron durante la escritura del HTML y CSS.
 
-Verificación de buenas prácticas: Validó la correcta estructura semántica en HTML5 (uso de etiquetas como <section>, <article>, <header>, <footer>) y confirmó el cumplimiento de las reglas de responsividad en CSS (@media queries, Flexbox) para garantizar que la página funcionara en distintos tamaños de pantalla.
+Verificación de buenas prácticas: Validó la correcta estructura semántica en HTML5 (uso de etiquetas como section,article,header,footer) y confirmó el cumplimiento de las reglas de responsividad en CSS (@media queries, Flexbox) para garantizar que la página funcionara en distintos tamaños de pantalla.
 
 Registro de evidencias: evidencias/ia/registro_ia.md
  

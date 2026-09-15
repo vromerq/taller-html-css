@@ -1,0 +1,6 @@
+Evidencia de Uso de la Inteligencia Artificial en el Proyecto* (Con la ayuda de la ia que recopilo en lo que nos ayudo para poder hacer este listado)
+* *Documentación y Explicación de Código:* Generación de comentarios paso a paso dentro del archivo styles.css para detallar la función de cada propiedad CSS (variables globales, reset, estilos generales, selectores y contenedores).
+* *Migración a Layout Flexible (Flexbox):* Explicación y reestructuración del contenedor de tarjetas (.cards y .card), reemplazando la cuadrícula inicial por propiedades flexibles (display: flex, flex-wrap, y flex-basis).
+* *Diseño Responsivo con Media Queries:* Implementación de la regla @media (max-width: 700px) para adaptar la interfaz a teléfonos móviles, pasando la alineación del menú y las tarjetas de horizontal a filas verticales (flex-direction: column).
+* *Pruebas e Inspección con Herramientas de Desarrollo:* Orientación sobre el uso de DevTools en el navegador ($1200\text{px}$, $768\text{px}$ y $390\text{px}$) para verificar la legibilidad, usabilidad y ausencia de desbordamiento horizontal.
+* *Control de Versiones y Gestión de Errores:* Asistencia en el flujo de trabajo con Git y GitHub (comandos en la terminal de VS Code, resolución del error de permisos 403 y alternativas de subida directa a través de la web).
